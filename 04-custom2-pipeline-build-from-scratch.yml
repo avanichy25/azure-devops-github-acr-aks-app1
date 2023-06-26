@@ -33,7 +33,7 @@ stages:
           $(Build.SourceVersion)
     - task: CopyFiles@2
       inputs:
-        SourceFolder: '**/kube-manifest'
+        SourceFolder: '**/kube-manifests'
         Contents: '**'
         TargetFolder: '$(build.artifactstagingdirectory)'
         OverWrite: true
@@ -41,6 +41,6 @@ stages:
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'kube-manifest'
+        ArtifactName: 'kube-manifests'
         publishLocation: 'Container'
       
