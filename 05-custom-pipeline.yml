@@ -29,7 +29,7 @@ stages:
                 $(Build.SourceVersion)
           - task: CopyFiles@2
             inputs:
-              SourceFolder: '$(Build.SourceDirectory)/kube-manifests'
+              SourceFolder: '$(Build.SourcesDirectory)/kube-manifests'
               Contents: '**'
               TargetFolder: '$(build.artifactstagingdirectory)'
               OverWrite: true
