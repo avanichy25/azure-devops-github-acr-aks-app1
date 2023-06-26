@@ -7,7 +7,7 @@ trigger:
 - main
 
 variables:
-  tag: $(Build.BuildId) 
+  tag: '$(Build.BuildId)'
 
 stages:
   - stage: Build Stage
