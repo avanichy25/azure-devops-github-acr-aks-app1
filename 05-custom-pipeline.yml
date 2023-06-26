@@ -11,10 +11,10 @@ variables:
 
 stages:
   - stage: Build Stage
-    displayName: Build image
+    displayName: Build
     jobs:
       - job: Build 
-        displayName: Job to build
+        displayName: Job
         pool:
           vmImage: 'ubuntu-latest'
         steps:
